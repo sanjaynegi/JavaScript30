@@ -3,8 +3,10 @@
 _My code for 30 Days Vanilla JavaScript Challenge._  
 _To build 30 things with Vanilla JavaScript in 30 days._
 
-### Projects Built:
+[vigneshm/JavaScript30](http://vigneshm.com/JavaScript30/)
 
+### Projects Built:  
+  
 >[Day 01 - JavaScript Drum Kit](http://vigneshm.com/JavaScript30/01 - JavaScript Drum Kit/)  
 [Day 02 - JS + CSS Clock](http://vigneshm.com/JavaScript30/02 - JS + CSS Clock/)  
 [Day 03 - CSS Variables](http://vigneshm.com/JavaScript30/03 - CSS Variables/)  
@@ -35,5 +37,3 @@ _To build 30 things with Vanilla JavaScript in 30 days._
 [Day 28 - Video Speed Controller](http://vigneshm.com/JavaScript30/28 - Video Speed Controller/)  
 [Day 29 - Countdown Timer](http://vigneshm.com/JavaScript30/29 - Countdown Timer/)  
 [Day 30 - Whack A Mole](http://vigneshm.com/JavaScript30/30 - Whack A Mole/)  
-
-Link: [vigneshm.com/JavaScript30](http://vigneshm.com/JavaScript30/)
