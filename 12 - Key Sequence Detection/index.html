@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Key Detection</title>
+    <div id="hello">
+        Type something !
+    </div>
+    <div id="booo">
+    </div>
+
+    <audio src="openhat.wav"></audio>
+
+    <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+
+<body>
+    <script>
+        // setTimeout(function() {
+        //     document.querySelector('#hello').style.display = "none";
+        // }, 3000);
+        document.querySelector('#booo').style.display = "none";
+        const pressed = [];
+        const secretCode = 'something';
+
+        window.addEventListener('keyup', (e) => {
+            console.log(e.key);
+            pressed.push(e.key);
+            pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+            if (pressed.join('').includes(secretCode)) {
+                console.log('DING DING!');
+                cornify_add();
+                document.querySelector('#hello').innerHTML = "You got it! :p"
+                document.querySelector('#booo').style.display = "none";
+                document.querySelector('audio').play();
+            } else {
+                document.querySelector('#booo').innerHTML = "boooo!!!";
+                document.querySelector('#booo').style.display = "block";
+            }
+            console.log(pressed);
+        });
+    </script>
+
+    <style>
+        #hello {
+            color: #ef5252;
+            font-size: 4em;
+            text-align: center;
+        }
+
+        #booo {
+            color: #c93636;
+            font-size: 4em;
+            text-align: center;
+            margin-top: 10vh;
+        }
+    </style>
+</body>
+
+</html>
