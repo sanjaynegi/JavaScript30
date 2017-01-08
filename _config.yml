@@ -1,1 +1,10 @@
 theme: jekyll-theme-architect
+
+url: https://vigneshm.com/JavaScript30/
+enforce_ssl: vigneshm.com/JavaScript30/
+
+title: Vignesh M
+subtitle:
+author: Vignesh M
+simple_search: http://google.com/search
+date_format: "ordinal"
