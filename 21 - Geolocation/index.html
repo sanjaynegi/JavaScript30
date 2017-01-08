@@ -16,6 +16,11 @@
     <span class="speed-value">0</span>
     <span class="units">KM/H</span>
   </h1>
+    <h3>
+    Accuracy: <span class="accuracy"></span><br>
+    Latit: <span class="latitute"></span><br>
+    Long: <span class="longitude"></span>
+  </h3>
 
     <style>
         html {
@@ -51,6 +56,14 @@
             align-items: center;
         }
 
+        h3 {
+            color: white;
+            font-weight: 100;
+            font-size: 20px;
+            /*display: flex;*/
+            align-items: center;
+        }
+
         .units {
             font-size: 15px;
         }
@@ -59,10 +72,16 @@
     <script>
         const arrow = document.querySelector('.arrow');
         const speed = document.querySelector('.speed-value');
+        const lat = document.querySelector('.latitute');
+        const long = document.querySelector('.longitude');
+        const accu = document.querySelector('.accuracy');
 
         navigator.geolocation.watchPosition((data) => {
             console.log(data);
             speed.textContent = data.coords.speed;
+            lat.textContent = data.coords.latitude;
+            long.textContent = data.coords.longitude;
+            accu.textContent = data.coords.accuracy;
             arrow.style.transform = `rotate(${data.coords.heading}deg)`;
         }, (err) => {
             console.error(err);
