@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
     background: url('http://wes.io/hx9M/oh-la-la.jpg') center no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
