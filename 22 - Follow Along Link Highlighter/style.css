@@ -5,7 +5,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0; /* Important! */
   font-family: sans-serif;
   background:
